@@ -1,3 +1,14 @@
+let el = document.querySelectorAll(".plartform");
+
+for(i=0; i <= el.length; i++){
+    el[i].addEventListener('click', function(){
+        window.location.href = 'notFound.html'
+        
+    })
+}
+
+console.log(document.querySelectorAll('.plartform'));
+
 function showMenu(params) {
 
     document.getElementById("menu").style.display = "none";
@@ -9,7 +20,6 @@ function showMenu(params) {
     document.getElementById("mobileNavigation").style.display = "flex";
 
 }
-
 
 var newLink = document.querySelectorAll("#mobileNavigation > a");
 for( i = 0; i <= newLink.length; i++){
@@ -34,3 +44,7 @@ function closeMenu(params) {
     }
 
 }
+
+
+
+
